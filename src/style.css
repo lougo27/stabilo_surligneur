@@ -107,6 +107,9 @@ form input[type="submit"]:hover {
 }     
 #filtres {
   margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 .bouton_filtre {
   background-color: #ff0303;
@@ -164,4 +167,8 @@ form input[type="submit"]:hover {
   font-size: 1rem;
   padding: 0.3rem 1rem;
   border-radius: 0.5rem;
+}
+
+.hidden {
+  display: none;
 }
