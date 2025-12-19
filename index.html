@@ -8,7 +8,40 @@
   </head>
   <body>
     <img src="public/images/stabilo-logo.svg" alt="stabilo-logo" class="logo">
+    <div id="partieDroite">
+      <div id="filtres"> 
+        <button class="bouton_filtre" data-modele="1">STABILO Boss Original</button>
+        <button class="bouton_filtre" data-modele="2">STABILO Boss Nature</button>
+        <button class="bouton_filtre" data-modele="3">STABILO Boss Pastel</button>
+        <button class="bouton_filtre" data-modele="4">STABILO Boss Neon</button>
+        <button class="bouton_filtre" data-modele="5">STABILO BOSS Luminors</button>
+        <button class="bouton_filtre" data-modele="all">Tous les modèles</button>
+      </div>
+      <div id="conteneur_images">
+      </div>
+    </div>
+    
+    <form id="ajout_surligneur">
+      <label for="modele">Modèle:</label>
+      <select id="modele" name="modele">
+        <option value="1">STABILO Boss Original</option>
+        <option value="2">STABILO Boss Nature</option>
+        <option value="3">STABILO Boss Pastel</option>
+        <option value="4">STABILO Boss Neon</option>
+        <option value="5">STABILO BOSS Luminors</option>
+      </select><br><br>
+      <label for="image_url">URL de l'image:</label>
+      <input type="text" id="image_url" name="image_url"><br><br>
+      <label for="nom_couleur">Nom de la couleur:</label>
+      <input type="text" id="nom_couleur" name="nom_couleur"><br><br>
+      <label for="code_hex">Code couleur hexadécimal:</label>
+      <input type="text" id="code_hex" name="code_hex"><br><br>
+      <label for="code_rgb">Code couleur RGB:</label>
+      <input type="text" id="code_rgb" name="code_rgb"><br><br>
+      <input type="submit" value="Ajouter le surligneur">
+    </form> 
 
+  
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

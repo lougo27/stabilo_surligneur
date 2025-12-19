@@ -10,6 +10,8 @@ body {
   background-image: url('/public/images/Fond_carreaux.jpeg'); 
   background-color: rgba(255,255,255, 0.7);
   background-blend-mode: overlay;
+  overflow: hidden;
+  
   
 }
 
@@ -18,4 +20,148 @@ body {
   position: absolute;
   top: 1rem;
   left: 1rem;
+}
+
+
+.carte {
+  width: 15rem;
+  height: 25rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+}
+.carte img {
+  width: 90%;
+  height: auto;
+
+}
+.description {
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+}
+.couleur {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+.color-box {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+}
+.couleur_code p {
+  margin: 0.2rem 0;
+  font-size: 0.8rem;
+}
+
+form {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  left: 2rem;
+  top: 5rem;
+  padding: 2rem;
+  width: 20rem;
+  position: fixed;
+} 
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+form input[type="text"], form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+form input[type="submit"] {
+  background-color: #ff0303;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: 1px solid #ff0303;
+}
+form input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #ff0303;
+  border: 1px solid #ff0303;
+}
+
+#partieDroite {
+  margin-left: 25rem;
+  padding: 2rem;
+}     
+#filtres {
+  margin-bottom: 1rem;
+}
+.bouton_filtre {
+  background-color: #ff0303;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: 1px solid #ff0303;
+  margin-right: 0.5rem;
+}
+.bouton_filtre:hover {
+  background-color: #ffffff;
+  color: #ff0303;
+  border: 1px solid #ff0303;
+}
+
+
+#conteneur_images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  height: 80vh;
+  overflow-y: scroll;
+
+} 
+
+.edit-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #ff0303;
+  border: 1px solid #ff0303;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.edit-button img {
+  width: 1rem;
+  height: auto;
+}
+
+.delete-button {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  cursor: pointer;
+  background-color: #ff0303;
+  color: #ffffff;
+  border: none;
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
 }
